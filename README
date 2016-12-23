@@ -24,12 +24,10 @@ same distance at speed as from the second city to the first city.
 It's September, which means you have only 6 months to make your Spring Break vacation plans
 to a dream destination! We've prepared a dataset of major highway segments of the United States
 (and parts of southern Canada and northern Mexico), including highway names, distances, and speed
-
 limits; you can visualize this as a graph with nodes as towns and highway segments as edges. We've
-also prepared a dataset of cities and towns with corresponding latitude-longitude positions. These les
-should be in your GitHub repo from when you cloned in step 0. Your job is to implement algorithms
-that find good driving directions between pairs of cities given by the user. Your program should be
-run on the commandline like this:
+also prepared a dataset of cities and towns with corresponding latitude-longitude positions. 
+Your job is to implement algorithms that find good driving directions between pairs of cities given by the user. 
+Your program should be run on the commandline like this:
 
 python route.py [start-city] [end-city] [routing-option] [routing-algorithm]
 where:
