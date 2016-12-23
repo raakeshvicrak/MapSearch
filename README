@@ -20,3 +20,29 @@ have a corresponding line in city-gps.txt. You should assume that all roads
 in road-segments.txt are bidirectional, i.e. none are one-way roads, so
 that it's possible to travel from the first city to the second city at the
 same distance at speed as from the second city to the first city.
+
+It's September, which means you have only 6 months to make your Spring Break vacation plans
+to a dream destination! We've prepared a dataset of major highway segments of the United States
+(and parts of southern Canada and northern Mexico), including highway names, distances, and speed
+
+limits; you can visualize this as a graph with nodes as towns and highway segments as edges. We've
+also prepared a dataset of cities and towns with corresponding latitude-longitude positions. These les
+should be in your GitHub repo from when you cloned in step 0. Your job is to implement algorithms
+that find good driving directions between pairs of cities given by the user. Your program should be
+run on the commandline like this:
+
+python route.py [start-city] [end-city] [routing-option] [routing-algorithm]
+where:
+ start-city and end-city are the cities we need a route between.
+ routing-option is one of:
+{ segments finds a route with the fewest number of \turns" (i.e. edges of the graph)
+{ distance finds a route with the shortest total distance
+{ time finds the fastest route, for a car that always travels at the speed limit
+{ scenic finds the route having the least possible distance spent on highways (which we dene
+as roads with speed limits 55 mph or greater)
+ routing-algorithm is one of:
+{ bfs uses breadth-first search
+{ dfs uses depth-first search
+{ ids uses iterative deepening search
+{ astar uses A* search, with a suitable heuristic function
+
